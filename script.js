@@ -4,3 +4,15 @@
 //va applicato uno sconto del 20% per i minorenni
 //va applicato uno sconto del 40% per gli over 65.
 
+let mioDiv = document.getElementById('testo');
+console.dir(mioDiv);
+
+const prezzo_biglietto = '0.21€';
+
+let km = prompt('Number of km');
+console.log(km);
+
+let age = prompt('Your age');
+console.log(age);
+
+

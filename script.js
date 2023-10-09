@@ -15,15 +15,17 @@ console.log(numeroDiKm);
 
 let prezzoBase = numeroDiKm * prezzoAlKm;
 
+let n = prezzoBase.toFixed(2);
+
 let client_age = parseInt(prompt('Your age'));
 console.log(client_age);
 
 if (client_age < 18) {
     prezzoBase = prezzoBase - (prezzoBase * 20/100);
-    console.log('prezzoBase €', prezzoBase);
+    mioDiv.innerHTML = 'Il prezzo del tuo biglietto è = €' + prezzoBase;
 } else if (client_age >= 65){
     prezzoBase = prezzoBase - (prezzoBase * 40/100);
-    console.log('prezzoBase €', prezzoBase);
+    mioDiv.innerHTML = 'Il prezzo del tuo biglietto è = €' + prezzoBase;
 } else{
-    console.log('prezzoBase €', prezzoBase);
+    mioDiv.innerHTML = 'Il prezzo del tuo biglietto è = €' + prezzoBase;
 }

@@ -15,12 +15,13 @@ console.log(numeroDiKm);
 
 let prezzoBase = numeroDiKm * prezzoAlKm;
 
-let client = 'under age';
+let client_age = parseInt(prompt('Your age'));
+console.log(client_age);
 
-if (client === 'under age') {
+if (client_age < 18) {
     prezzoBase = prezzoBase - (prezzoBase * 20/100);
     console.log('prezzoBase €', prezzoBase);
-} else if (client !== 'under age' && > 65){
+} else if (client_age >= 65){
     prezzoBase = prezzoBase - (prezzoBase * 40/100);
     console.log('prezzoBase €', prezzoBase);
 } else{

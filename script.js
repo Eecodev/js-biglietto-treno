@@ -4,15 +4,15 @@
 //va applicato uno sconto del 20% per i minorenni
 //va applicato uno sconto del 40% per gli over 65.
 
-let mioDiv = document.getElementById('testo');
+let mioDiv = document.getElementById('text');
 console.dir(mioDiv);
 
-const prezzo_biglietto = '0.21€';
+let prezzoAlKm = '0.21€';
+console.log(prezzoAlKm);
 
-let km = prompt('Number of km');
-console.log(km);
+let numeroDiKm = parseInt(prompt('Number of Km'));
+console.log(numeroDiKm);
 
-let age = prompt('Your age');
-console.log(age);
+let prezzoBase = numeroDiKm * prezzoAlKm;
 
-
+if ()

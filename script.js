@@ -7,7 +7,7 @@
 let mioDiv = document.getElementById('text');
 console.dir(mioDiv);
 
-let prezzoAlKm = '0.21€';
+let prezzoAlKm = 0.21;
 console.log(prezzoAlKm);
 
 let numeroDiKm = parseInt(prompt('Number of Km'));
@@ -15,4 +15,14 @@ console.log(numeroDiKm);
 
 let prezzoBase = numeroDiKm * prezzoAlKm;
 
-if ()
+let client = 'under age';
+
+if (client === 'under age') {
+    prezzoBase = prezzoBase - (prezzoBase * 20/100);
+    console.log('prezzoBase €', prezzoBase);
+} else if (client !== 'under age' && > 65){
+    prezzoBase = prezzoBase - (prezzoBase * 40/100);
+    console.log('prezzoBase €', prezzoBase);
+} else{
+    console.log('prezzoBase €', prezzoBase);
+}
